@@ -1,0 +1,6 @@
+.board {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
+  grid-area: board;
+}

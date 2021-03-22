@@ -1,0 +1,13 @@
+.game {
+  display: grid;
+  grid-template-columns: minmax(15%, auto) repeat(5, 1fr) minmax(15%, auto);
+  grid-template-rows: 4em repeat(5, 1fr);
+  grid-template-areas:
+    "chatLeft turn turn turn turn turn chatRight"
+    "chatLeft board board board board board chatRight"
+    "chatLeft board board board board board chatRight"
+    "chatLeft board board board board board chatRight"
+    "chatLeft board board board board board chatRight"
+    "chatLeft board board board board board chatRight";
+  grid-gap: 2ex;
+}

@@ -1,0 +1,57 @@
+.card {
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 100%;
+  height: 8ex;
+  text-align: center;
+  line-height: 8ex;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: transform 1s ease-out 0s;
+  cursor: pointer;
+  box-shadow: 0 0 0.8ex 0.3ex rgba(50, 50, 50, 0.3);
+
+  &,
+  .front,
+  .back {
+    border-radius: 0.8ex;
+  }
+
+  &.flipped {
+    transform: translateX(-100%) rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  .front {
+    background-color: rgb(240, 240, 227);
+  }
+
+  .back.N {
+    background-color: rgb(190, 190, 180);
+  }
+
+  .back.A {
+    background-color: #0000aa;
+  }
+
+  .back.B {
+    background-color: #d40000;
+  }
+
+  .back.F {
+    background-color: black;
+  }
+}
